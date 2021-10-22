@@ -161,9 +161,17 @@ a {
    var(--footer-background-color);
 }
 
-/* .hero-box {
-  
-} */
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)),  url(../images/img-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .hero-title {
   width: 696px;
@@ -215,6 +223,12 @@ a {
 .advantage-item {
   margin-right: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
+}
+.advantage-thumb {
+background: var(--background-color-buttons);
+border-radius: 4px;
+height: 120px;
+margin-bottom: var(--card-set-gap);
 }
 
 .advantage-title {
@@ -278,14 +292,15 @@ a {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
 
-.text-container {
+.team-text-container {
   padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
 
   text-align: center;
   background-color: var(--hero-headline-color);
-  
 }
+
+
 .team-title {
   margin-bottom: 10px;
 
