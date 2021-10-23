@@ -10,6 +10,7 @@
   --logo-span-color: #000000;
   --header-border-color: #ececec;
   --card-border-color: #eeeeee;
+  --social-icon-color: #AFB1B8;
   --card-set-gap: 30px;
 }
 
@@ -292,14 +293,13 @@ margin-bottom: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
 
-.team-text-container {
+.team-info-container {
   padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
 
   text-align: center;
   background-color: var(--hero-headline-color);
 }
-
 
 .team-title {
   margin-bottom: 10px;
@@ -308,6 +308,45 @@ margin-bottom: var(--card-set-gap);
   line-height: 1.2;
   color: var(--headline-text-color);
 }
+
+.social-list {
+display: flex;
+justify-content: center;
+margin-top: 16px;
+}
+
+.social-item {
+width: 44px;
+height: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color-blue);
+}
+
+.social-icon {
+  fill: var(--social-icon-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--hero-headline-color);
+}
+ 
+
 
 /* footer */
 .page-footer {
